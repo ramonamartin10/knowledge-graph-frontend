@@ -28,7 +28,7 @@ const NavBar = () => {
                 "item" +
                 (selectedPage === page.SmallKnowledgeGraph ? "-selected" : "")
               }
-              href="/SmallKnowledgeGraph"
+              href="./SmallKnowledgeGraph"
             >
               Small Knowledge Graph
             </a>
@@ -40,7 +40,7 @@ const NavBar = () => {
                 "item" +
                 (selectedPage === page.MediumKnowledgeGraph ? "-selected" : "")
               }
-              href="/MediumKnowledgeGraph"
+              href="./MediumKnowledgeGraph"
             >
               Medium Knowledge Graph
             </a>
@@ -52,7 +52,7 @@ const NavBar = () => {
                 "item" +
                 (selectedPage === page.LargeKnowledgeGraph ? "-selected" : "")
               }
-              href="/LargeKnowledgeGraph"
+              href="./LargeKnowledgeGraph"
             >
               Large Knowledge Graph
             </a>
