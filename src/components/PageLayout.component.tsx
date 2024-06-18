@@ -10,14 +10,20 @@ import "./PageLayout.component.css";
 const PageLayout = () => {
   const renderSelectedPage = () => {
     return (
-      <Router basename={ `/${process.env.PUBLIC_URL}`}>
+      <Router basename={process.env.PUBLIC_URL}>
         <Routes>
-          <Route path="SmallKnowledgeGraph" element={<SmallKnowledgeGraph />} />
           <Route
-            path="MediumKnowledgeGraph"
+            path="/SmallKnowledgeGraph"
+            element={<SmallKnowledgeGraph />}
+          />
+          <Route
+            path="/MediumKnowledgeGraph"
             element={<MediumKnowledgeGraph />}
           />
-          <Route path="LargeKnowledgeGraph" element={<LargeKnowledgeGraph />} />
+          <Route
+            path="/LargeKnowledgeGraph"
+            element={<LargeKnowledgeGraph />}
+          />
         </Routes>
       </Router>
     );
