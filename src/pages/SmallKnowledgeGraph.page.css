@@ -1,0 +1,13 @@
+.small-knowledge-graph {
+  height: 100vh;
+  width: 100%;
+}
+
+.knowledge-graph-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
