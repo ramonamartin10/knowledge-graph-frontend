@@ -1,4 +1,4 @@
-import { Route, HashRouter as Router, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import SmallKnowledgeGraph from "../pages/SmallKnowlegdeGraph.page";
 import LargeKnowledgeGraph from "../pages/LargeKnowledgeGraph.page";
 import MediumKnowledgeGraph from "../pages/MediumKnowledgeGraph.page";
@@ -10,7 +10,7 @@ import "./PageLayout.component.css";
 const PageLayout = () => {
   const renderSelectedPage = () => {
     return (
-      <Router basename="knowledge-graph-frontend">
+      <Router basename={ `/${process.env.PUBLIC_URL}`}>
         <Routes>
           <Route path="/SmallKnowledgeGraph" element={<SmallKnowledgeGraph />} />
           <Route
