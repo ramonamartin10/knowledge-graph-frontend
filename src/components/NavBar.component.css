@@ -39,9 +39,11 @@
 
 .nav-bar .elements li button {
   text-decoration: none;
+  background-color: transparent;
+  border: none;
   color: black;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .nav-bar .elements li button:hover {
