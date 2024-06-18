@@ -10,7 +10,7 @@ import "./PageLayout.component.css";
 const PageLayout = () => {
   const renderSelectedPage = () => {
     return (
-      <Router>
+      <Router basename="/knowledge-graph-frontend">
         <Routes>
           <Route
             path="/SmallKnowledgeGraph"
