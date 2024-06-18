@@ -1,4 +1,3 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import SmallKnowledgeGraph from "../pages/SmallKnowlegdeGraph.page";
 import LargeKnowledgeGraph from "../pages/LargeKnowledgeGraph.page";
 import MediumKnowledgeGraph from "../pages/MediumKnowledgeGraph.page";
