@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/knowledge-graph-frontend/static/css/main.f855e6bc.css",
-    "main.js": "/knowledge-graph-frontend/static/js/main.e725b94f.js",
-    "static/js/453.e3174030.chunk.js": "/knowledge-graph-frontend/static/js/453.e3174030.chunk.js",
-    "static/media/logo.svg": "/knowledge-graph-frontend/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/knowledge-graph-frontend/static/css/main.484e72ec.css",
+    "main.js": "/knowledge-graph-frontend/static/js/main.c3a8e23b.js",
     "index.html": "/knowledge-graph-frontend/index.html",
-    "main.f855e6bc.css.map": "/knowledge-graph-frontend/static/css/main.f855e6bc.css.map",
-    "main.e725b94f.js.map": "/knowledge-graph-frontend/static/js/main.e725b94f.js.map",
-    "453.e3174030.chunk.js.map": "/knowledge-graph-frontend/static/js/453.e3174030.chunk.js.map"
+    "main.484e72ec.css.map": "/knowledge-graph-frontend/static/css/main.484e72ec.css.map",
+    "main.c3a8e23b.js.map": "/knowledge-graph-frontend/static/js/main.c3a8e23b.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.e725b94f.js"
+    "static/css/main.484e72ec.css",
+    "static/js/main.c3a8e23b.js"
   ]
 }
