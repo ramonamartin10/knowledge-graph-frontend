@@ -1,61 +1,40 @@
-import { useEffect, useState } from "react";
+import React from "react";
 import page from "../types/page.types";
 import "./NavBar.component.css";
 
-const NavBar = () => {
-  const [selectedPage, setSelectedPage] = useState<page>(
-    page.SmallKnowledgeGraph,
-  );
+interface NavBarProps {
+  onPageSelect: (selectedPage: page) => void;
+  selectedPage: page;
+}
 
-  useEffect(() => {
-    const path = window.location.pathname;
-    if (path === "/SmallKnowledgeGraph") {
-      setSelectedPage(page.SmallKnowledgeGraph);
-    } else if (path === "/MediumKnowledgeGraph") {
-      setSelectedPage(page.MediumKnowledgeGraph);
-    } else if (path === "/LargeKnowledgeGraph") {
-      setSelectedPage(page.LargeKnowledgeGraph);
-    }
-  }, []);
-
+const NavBar: React.FC<NavBarProps> = ({ onPageSelect, selectedPage }) => {
   return (
     <div className="nav-bar">
       <div className="elements">
         <div className="items">
           <li>
-            <a
-              className={
-                "item" +
-                (selectedPage === page.SmallKnowledgeGraph ? "-selected" : "")
-              }
-              href="./SmallKnowledgeGraph"
+            <button
+              className={`item${selectedPage === page.SmallKnowledgeGraph ? "-selected" : ""}`}
+              onClick={() => onPageSelect(page.SmallKnowledgeGraph)}
             >
               Small Knowledge Graph
-            </a>
+            </button>
           </li>
-
           <li>
-            <a
-              className={
-                "item" +
-                (selectedPage === page.MediumKnowledgeGraph ? "-selected" : "")
-              }
-              href="./MediumKnowledgeGraph"
+            <button
+              className={`item${selectedPage === page.MediumKnowledgeGraph ? "-selected" : ""}`}
+              onClick={() => onPageSelect(page.MediumKnowledgeGraph)}
             >
               Medium Knowledge Graph
-            </a>
+            </button>
           </li>
-
           <li>
-            <a
-              className={
-                "item" +
-                (selectedPage === page.LargeKnowledgeGraph ? "-selected" : "")
-              }
-              href="./LargeKnowledgeGraph"
+            <button
+              className={`item${selectedPage === page.LargeKnowledgeGraph ? "-selected" : ""}`}
+              onClick={() => onPageSelect(page.LargeKnowledgeGraph)}
             >
               Large Knowledge Graph
-            </a>
+            </button>
           </li>
         </div>
       </div>

@@ -6,27 +6,25 @@ import NavBar from "./NavBar.component";
 import PageHeader from "./PageHeader.component";
 import PageFooter from "./PageFooter.component";
 import "./PageLayout.component.css";
+import page from "../types/page.types";
+import { useState } from "react";
 
 const PageLayout = () => {
+  const [selectedPage, setSelectedPage] = useState<page>(
+    page.SmallKnowledgeGraph
+  );
+
   const renderSelectedPage = () => {
-    return (
-      <Router basename={process.env.PUBLIC_URL}>
-        <Routes>
-          <Route
-            path="/SmallKnowledgeGraph"
-            element={<SmallKnowledgeGraph />}
-          />
-          <Route
-            path="/MediumKnowledgeGraph"
-            element={<MediumKnowledgeGraph />}
-          />
-          <Route
-            path="/LargeKnowledgeGraph"
-            element={<LargeKnowledgeGraph />}
-          />
-        </Routes>
-      </Router>
-    );
+    switch (selectedPage) {
+      case page.SmallKnowledgeGraph:
+        return <SmallKnowledgeGraph />;
+      case page.MediumKnowledgeGraph:
+        return <MediumKnowledgeGraph />;
+      case page.LargeKnowledgeGraph:
+        return <LargeKnowledgeGraph />;
+      default:
+        return <div>Select a page from the navigation bar</div>;
+    }
   };
 
   return (
@@ -35,7 +33,7 @@ const PageLayout = () => {
         <PageHeader />
       </div>
       <div className="navigation">
-        <NavBar />
+        <NavBar selectedPage={selectedPage} onPageSelect={setSelectedPage} />
       </div>
       <div className="page">{renderSelectedPage()}</div>
       <div className="footer">

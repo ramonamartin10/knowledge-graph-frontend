@@ -37,14 +37,14 @@
   padding: 15px;
 }
 
-.nav-bar .elements li a {
+.nav-bar .elements li button {
   text-decoration: none;
   color: black;
   font-size: 1rem;
   font-weight: 400;
 }
 
-.nav-bar .elements li a:hover {
+.nav-bar .elements li button:hover {
   color: #b98dcc;
 }
 
