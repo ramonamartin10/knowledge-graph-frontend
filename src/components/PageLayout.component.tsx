@@ -10,7 +10,7 @@ import "./PageLayout.component.css";
 const PageLayout = () => {
   const renderSelectedPage = () => {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route
             path="/SmallKnowledgeGraph"
