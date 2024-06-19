@@ -5,3 +5,9 @@
   justify-content: center;
   align-items: center;
 }
+
+.results-title {
+  margin: 30px;
+  font-size: 30px;
+  color: #333;
+}

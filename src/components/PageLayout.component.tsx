@@ -3,7 +3,7 @@ import LargeKnowledgeGraph from "../pages/LargeKnowledgeGraph.page";
 import MediumKnowledgeGraph from "../pages/MediumKnowledgeGraph.page";
 import NavBar from "./NavBar.component";
 import PageHeader from "./PageHeader.component";
-// import PageFooter from "./PageFooter.component";
+import PageFooter from "./PageFooter.component";
 import "./PageLayout.component.css";
 import page from "../types/page.types";
 import { useState } from "react";

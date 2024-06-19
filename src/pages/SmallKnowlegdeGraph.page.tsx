@@ -28,12 +28,12 @@ const SmallKnowledgeGraph = () => {
       </div>
 
       <div className="results">
-        <h2>Training 100 steps</h2>
+        <h2 className="results-title">Training 100 steps</h2>
         <div className="graphs">
           <Graph
             title="Rollout Episode Reward Mean"
             data={rolloutEpisodeRewardMean100Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"Reward"}
             yAxisMin={-94}
             yAxisMax={-91.5}
@@ -41,7 +41,7 @@ const SmallKnowledgeGraph = () => {
           <Graph
             title="Rollout Exploration Rate"
             data={rolloutExplorationRate100Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Steps"}
             yAxisName={"Exploration Rate"}
             yAxisMin={0}
             yAxisMax={1}
@@ -49,7 +49,7 @@ const SmallKnowledgeGraph = () => {
           <Graph
             title="Evaluation Mean Reward"
             data={evaluationMeanReward100Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"Reward"}
             yAxisMin={-98}
             yAxisMax={-86}
@@ -57,7 +57,7 @@ const SmallKnowledgeGraph = () => {
           <Graph
             title="Loss"
             data={trainLoss100Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"Loss"}
             yAxisMin={0}
             yAxisMax={140}
@@ -65,7 +65,7 @@ const SmallKnowledgeGraph = () => {
           <Graph
             title="Time fps"
             data={timeFps100Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"FPS"}
             yAxisMin={45}
             yAxisMax={64}
@@ -73,12 +73,12 @@ const SmallKnowledgeGraph = () => {
         </div>
         <div className="offloading-results"></div>
 
-        <h2>Training 250 steps</h2>
+        <h2 className="results-title">Training 250 steps</h2>
         <div className="graphs">
           <Graph
             title="Rollout Episode Reward Mean"
             data={rolloutEpisodeRewardMean250Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"Reward"}
             yAxisMin={-235}
             yAxisMax={-229}
@@ -86,7 +86,7 @@ const SmallKnowledgeGraph = () => {
           <Graph
             title="Rollout Exploration Rate"
             data={rolloutExplorationRate250Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"Exploration Rate"}
             yAxisMin={0}
             yAxisMax={1}
@@ -94,7 +94,7 @@ const SmallKnowledgeGraph = () => {
           <Graph
             title="Evaluation Mean Reward"
             data={evaluationMeanReward250Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"Reward"}
             yAxisMin={-239}
             yAxisMax={-224}
@@ -102,7 +102,7 @@ const SmallKnowledgeGraph = () => {
           <Graph
             title="Loss"
             data={trainLoss250Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"Loss"}
             yAxisMin={0}
             yAxisMax={140}
@@ -110,7 +110,7 @@ const SmallKnowledgeGraph = () => {
           <Graph
             title="Time fps"
             data={timeFps250Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"FPS"}
             yAxisMin={70}
             yAxisMax={88}
@@ -118,12 +118,12 @@ const SmallKnowledgeGraph = () => {
         </div>
         <div className="offloading-results"></div>
 
-        <h2>Training 500 steps</h2>
+        <h2 className="results-title">Training 500 steps</h2>
         <div className="graphs">
           <Graph
             title="Rollout Episode Reward Mean"
             data={rolloutEpisodeRewardMean500Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"Reward"}
             yAxisMin={-467.5}
             yAxisMax={-464}
@@ -131,7 +131,7 @@ const SmallKnowledgeGraph = () => {
           <Graph
             title="Rollout Exploration Rate"
             data={rolloutExplorationRate500Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"Exploration Rate"}
             yAxisMin={0}
             yAxisMax={1}
@@ -139,7 +139,7 @@ const SmallKnowledgeGraph = () => {
           <Graph
             title="Evaluation Mean Reward"
             data={evaluationMeanReward500Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"Reward"}
             yAxisMin={-472}
             yAxisMax={-455}
@@ -147,7 +147,7 @@ const SmallKnowledgeGraph = () => {
           <Graph
             title="Loss"
             data={trainLoss500Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"loss"}
             yAxisMin={0}
             yAxisMax={190}
@@ -155,7 +155,7 @@ const SmallKnowledgeGraph = () => {
           <Graph
             title="Time fps"
             data={timeFps500Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"FPS"}
             yAxisMin={100}
             yAxisMax={107}

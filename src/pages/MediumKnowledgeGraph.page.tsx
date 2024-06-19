@@ -19,7 +19,7 @@ import evaluationMeanReward500Steps from "../assets/graphs-results/medium/eval-m
 
 const MediumKnowledgeGraph = () => {
   return (
-    <div>
+    <div className="medium-knowledge-graph">
       <div className="knowledge-graph-container">
         <KnowledgeGraph
           src="knowledge_graph_medium"
@@ -27,12 +27,12 @@ const MediumKnowledgeGraph = () => {
         />
       </div>
       <div className="results">
-        <h2>Training 100 steps</h2>
+        <h2 className="results-title">Training 100 steps</h2>
         <div className="graphs">
           <Graph
             title="Rollout Episode Reward Mean"
             data={rolloutEpisodeRewardMean100Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"Reward"}
             yAxisMin={-95.5}
             yAxisMax={-93}
@@ -40,7 +40,7 @@ const MediumKnowledgeGraph = () => {
           <Graph
             title="Rollout Exploration Rate"
             data={rolloutExplorationRate100Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"Exploration Rate"}
             yAxisMin={0}
             yAxisMax={1}
@@ -48,7 +48,7 @@ const MediumKnowledgeGraph = () => {
           <Graph
             title="Evaluation Mean Reward"
             data={evaluationMeanReward100Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"Reward"}
             yAxisMin={-99}
             yAxisMax={-88}
@@ -56,7 +56,7 @@ const MediumKnowledgeGraph = () => {
           <Graph
             title="Loss"
             data={trainLoss100Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"Loss"}
             yAxisMin={0}
             yAxisMax={240}
@@ -64,7 +64,7 @@ const MediumKnowledgeGraph = () => {
           <Graph
             title="Time fps"
             data={timeFps100Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"FPS"}
             yAxisMin={25}
             yAxisMax={30}
@@ -72,12 +72,12 @@ const MediumKnowledgeGraph = () => {
         </div>
         <div className="offloading-results"></div>
 
-        <h2>Training 250 steps</h2>
+        <h2 className="results-title">Training 250 steps</h2>
         <div className="graphs">
           <Graph
             title="Rollout Episode Reward Mean"
             data={rolloutEpisodeRewardMean250Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"Reward"}
             yAxisMin={-238}
             yAxisMax={-233}
@@ -85,7 +85,7 @@ const MediumKnowledgeGraph = () => {
           <Graph
             title="Rollout Exploration Rate"
             data={rolloutExplorationRate250Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"Exploration Rate"}
             yAxisMin={0}
             yAxisMax={1}
@@ -93,7 +93,7 @@ const MediumKnowledgeGraph = () => {
           <Graph
             title="Evaluation Mean Reward"
             data={evaluationMeanReward250Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"Reward"}
             yAxisMin={-242}
             yAxisMax={-226}
@@ -101,7 +101,7 @@ const MediumKnowledgeGraph = () => {
           <Graph
             title="Loss"
             data={trainLoss250Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"Loss"}
             yAxisMin={0}
             yAxisMax={260}
@@ -109,7 +109,7 @@ const MediumKnowledgeGraph = () => {
           <Graph
             title="Time fps"
             data={timeFps250Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"FPS"}
             yAxisMin={39}
             yAxisMax={51}
@@ -117,12 +117,12 @@ const MediumKnowledgeGraph = () => {
         </div>
         <div className="offloading-results"></div>
 
-        <h2>Training 500 steps</h2>
+        <h2 className="results-title">Training 500 steps</h2>
         <div className="graphs">
           <Graph
             title="Rollout Episode Reward Mean"
             data={rolloutEpisodeRewardMean500Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"Reward"}
             yAxisMin={-473}
             yAxisMax={-467}
@@ -130,7 +130,7 @@ const MediumKnowledgeGraph = () => {
           <Graph
             title="Rollout Exploration Rate"
             data={rolloutExplorationRate500Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"Exploration Rate"}
             yAxisMin={0}
             yAxisMax={1}
@@ -138,7 +138,7 @@ const MediumKnowledgeGraph = () => {
           <Graph
             title="Evaluation Mean Reward"
             data={evaluationMeanReward500Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"Reward"}
             yAxisMin={-476}
             yAxisMax={-458}
@@ -146,7 +146,7 @@ const MediumKnowledgeGraph = () => {
           <Graph
             title="Loss"
             data={trainLoss500Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"loss"}
             yAxisMin={0}
             yAxisMax={240}
@@ -154,7 +154,7 @@ const MediumKnowledgeGraph = () => {
           <Graph
             title="Time fps"
             data={timeFps500Steps}
-            xAxisName={"Steps/Epsiode"}
+            xAxisName={"Step"}
             yAxisName={"FPS"}
             yAxisMin={52}
             yAxisMax={63}

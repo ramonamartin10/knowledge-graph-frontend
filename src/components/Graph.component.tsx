@@ -69,8 +69,8 @@ const Graph = (props: GraphProps) => {
   };
 
   return (
-    <div>
-      <h3>{props.title}</h3>
+    <div className="echarts-graph">
+      <h3 className="graph-title">{props.title}</h3>
       <ReactECharts className="graph" option={options} />
     </div>
   );
