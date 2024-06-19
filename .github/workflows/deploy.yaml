@@ -1,4 +1,6 @@
 name: Deploy to GitHub Pages
+env: 
+  CI: false
 on:
   push:
     branches:

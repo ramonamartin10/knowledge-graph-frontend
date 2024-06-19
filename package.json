@@ -25,8 +25,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "predeploy": "CI=false && npm run build",
-    "deploy": "CI=false && gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject",
     "pretty": "prettier --loglevel warn --write \"{src/components,src/constants,src/pages,src/service,src/types,src/utils}/**/*.{jsx,js,css,tsx}\""
   },
