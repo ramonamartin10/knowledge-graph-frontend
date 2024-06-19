@@ -10,7 +10,7 @@ import { useState } from "react";
 
 const PageLayout = () => {
   const [selectedPage, setSelectedPage] = useState<page>(
-    page.SmallKnowledgeGraph
+    page.SmallKnowledgeGraph,
   );
 
   const renderSelectedPage = () => {
@@ -35,9 +35,9 @@ const PageLayout = () => {
         <NavBar selectedPage={selectedPage} onPageSelect={setSelectedPage} />
       </div>
       <div className="page">{renderSelectedPage()}</div>
-      <div className="footer">
+      {/* <div className="footer">
         <PageFooter />
-      </div>
+      </div> */}
     </div>
   );
 };
