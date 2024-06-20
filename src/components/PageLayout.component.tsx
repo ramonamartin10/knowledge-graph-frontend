@@ -35,9 +35,9 @@ const PageLayout = () => {
         <NavBar selectedPage={selectedPage} onPageSelect={setSelectedPage} />
       </div>
       <div className="page">{renderSelectedPage()}</div>
-      {/* <div className="footer">
+      <div className="footer">
         <PageFooter />
-      </div> */}
+      </div>
     </div>
   );
 };

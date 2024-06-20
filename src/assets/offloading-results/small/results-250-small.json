@@ -1,0 +1,65 @@
+[
+    {
+      "step": 60,
+      "sourceNode": "smart_energy_asset_4",
+      "sourceNodeType": "edge",
+      "targetNode": "edge_device_10",
+      "targetNodeType": "edge"
+    },
+    {
+      "step": 62,
+      "sourceNode": "vm_5",
+      "sourceNodeType": "edge",
+      "targetNode": "vm_8",
+      "targetNodeType": "edge"
+    },
+    {
+      "step": 160,
+      "sourceNode": "data_pipeline_2",
+      "sourceNodeType": "fog",
+      "targetNode": "private_cloud_1",
+      "targetNodeType": "fog"
+    },
+    {
+      "step": 192,
+      "sourceNode": "smart_energy_asset_27",
+      "sourceNodeType": "edge",
+      "targetNode": "edge_device_19",
+      "targetNodeType": "edge"
+    },
+    {
+      "step": 202,
+      "sourceNode": "smart_energy_asset_31",
+      "sourceNodeType": "edge",
+      "targetNode": "edge_device_4",
+      "targetNodeType": "edge"
+    },
+    {
+      "step": 206,
+      "sourceNode": "smart_energy_asset_8",
+      "sourceNodeType": "edge",
+      "targetNode": "edge_device_5",
+      "targetNodeType": "edge"
+    },
+    {
+      "step": 212,
+      "sourceNode": "smart_energy_asset_2",
+      "sourceNodeType": "edge",
+      "targetNode": "edge_device_2",
+      "targetNodeType": "edge"
+    },
+    {
+      "step": 227,
+      "sourceNode": "smart_energy_asset_33",
+      "sourceNodeType": "edge",
+      "targetNode": "edge_device_16",
+      "targetNodeType": "edge"
+    },
+    {
+      "step": 235,
+      "sourceNode": "smart_energy_asset_40",
+      "sourceNodeType": "edge",
+      "targetNode": "smart_energy_asset_33",
+      "targetNodeType": "edge"
+    }
+  ]

@@ -1,0 +1,23 @@
+[
+    {
+      "step": 36,
+      "sourceNode": "smart_energy_asset_57",
+      "sourceNodeType": "edge",
+      "targetNode": "edge_device_3",
+      "targetNodeType": "edge"
+    },
+    {
+      "step": 96,
+      "sourceNode": "smart_energy_asset_75",
+      "sourceNodeType": "edge",
+      "targetNode": "edge_device_26",
+      "targetNodeType": "edge"
+    },
+    {
+      "step": 99,
+      "sourceNode": "smart_energy_asset_59",
+      "sourceNodeType": "edge",
+      "targetNode": "smart_energy_asset_63",
+      "targetNodeType": "edge"
+    }
+  ]

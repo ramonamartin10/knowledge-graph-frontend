@@ -24,8 +24,6 @@ const Graph = (props: GraphProps) => {
       );
       setXAxisData(xAxisData);
       setSeriesData(seriesData);
-      console.log(xAxisData);
-      console.log(seriesData);
     };
 
     fetchData();
@@ -58,6 +56,7 @@ const Graph = (props: GraphProps) => {
         data: seriesData,
         type: "line",
         name: "Value ",
+        color: "#4B0082",
       },
     ],
     tooltip: {
@@ -65,6 +64,17 @@ const Graph = (props: GraphProps) => {
       axisPointer: {
         type: "cross",
       },
+      backgroundColor: "rgba(255, 255, 255, 0.9)",
+      borderColor: "#ccc",
+      borderWidth: 1,
+      shadowBlur: 10,
+      shadowColor: "rgba(0, 0, 0, 0.1)",
+      shadowOffsetX: 2,
+      shadowOffsetY: 4,
+      textStyle: {
+        color: "#333",
+      },
+      extraCssText: "border-radius: 4px; padding: 10px;",
     },
   };
 

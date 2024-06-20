@@ -1,0 +1,86 @@
+[
+    {
+      "step": 9,
+      "sourceNode": "smart_energy_asset_68",
+      "sourceNodeType": "edge",
+      "targetNode": "edge_device_17",
+      "targetNodeType": "edge"
+    },
+    {
+      "step": 57,
+      "sourceNode": "data_pipeline_7",
+      "sourceNodeType": "fog",
+      "targetNode": "private_cloud_18",
+      "targetNodeType": "fog"
+    },
+    {
+      "step": 154,
+      "sourceNode": "smart_energy_asset_17",
+      "sourceNodeType": "edge",
+      "targetNode": "edge_device_4",
+      "targetNodeType": "edge"
+    },
+    {
+      "step": 161,
+      "sourceNode": "data_pipeline_12",
+      "sourceNodeType": "fog",
+      "targetNode": "private_cloud_10",
+      "targetNodeType": "fog"
+    },
+    {
+      "step": 186,
+      "sourceNode": "edge_device_2",
+      "sourceNodeType": "edge",
+      "targetNode": "vm_17",
+      "targetNodeType": "edge"
+    },
+    {
+      "step": 234,
+      "sourceNode": "smart_energy_asset_37",
+      "sourceNodeType": "edge",
+      "targetNode": "edge_device_24",
+      "targetNodeType": "edge"
+    },
+    {
+      "step": 247,
+      "sourceNode": "data_pipeline_16",
+      "sourceNodeType": "fog",
+      "targetNode": "private_cloud_6",
+      "targetNodeType": "fog"
+    },
+    {
+      "step": 251,
+      "sourceNode": "smart_energy_asset_5",
+      "sourceNodeType": "edge",
+      "targetNode": "smart_energy_asset_36",
+      "targetNodeType": "edge"
+    },
+    {
+      "step": 369,
+      "sourceNode": "data_pipeline_13",
+      "sourceNodeType": "fog",
+      "targetNode": "private_cloud_5",
+      "targetNodeType": "fog"
+    },
+    {
+      "step": 406,
+      "sourceNode": "smart_energy_asset_69",
+      "sourceNodeType": "edge",
+      "targetNode": "smart_energy_asset_17",
+      "targetNodeType": "edge"
+    },
+    {
+      "step": 433,
+      "sourceNode": "smart_energy_asset_2",
+      "sourceNodeType": "edge",
+      "targetNode": "edge_device_4",
+      "targetNodeType": "edge"
+    },
+    {
+      "step": 464,
+      "sourceNode": "smart_energy_asset_3",
+      "sourceNodeType": "edge",
+      "targetNode": "edge_device_24",
+      "targetNodeType": "edge"
+    }
+  ]

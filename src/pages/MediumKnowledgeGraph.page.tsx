@@ -16,19 +16,23 @@ import rolloutEpisodeRewardMean500Steps from "../assets/graphs-results/medium/ro
 import evaluationMeanReward100Steps from "../assets/graphs-results/medium/eval-mean-reward/medium-graph-100-steps-ep_1.json";
 import evaluationMeanReward250Steps from "../assets/graphs-results/medium/eval-mean-reward/medium-graph-250-steps-ep_1.json";
 import evaluationMeanReward500Steps from "../assets/graphs-results/medium/eval-mean-reward/medium-graph-500-steps-ep_1.json";
+import ResultsTable from "../components/ResultsTable.component";
+import results500Medium from "../assets/offloading-results/medium/results-500-medium.json";
+import results250Medium from "../assets/offloading-results/medium/results-250-medium.json";
+import results100Medium from "../assets/offloading-results/medium/results-100-medium.json";
 
 const MediumKnowledgeGraph = () => {
   return (
     <div className="medium-knowledge-graph">
-      <div className="knowledge-graph-container">
+      <div className="medium-knowledge-graph-container">
         <KnowledgeGraph
           src="knowledge_graph_medium"
           title="Medium Knowledge Graph"
         />
       </div>
-      <div className="results">
-        <h2 className="results-title">Training 100 steps</h2>
-        <div className="graphs">
+      <div className="medium-results">
+        <h2 className="medium-results-title">Learning: 100 steps/episode</h2>
+        <div className="medium-graphs">
           <Graph
             title="Rollout Episode Reward Mean"
             data={rolloutEpisodeRewardMean100Steps}
@@ -70,10 +74,12 @@ const MediumKnowledgeGraph = () => {
             yAxisMax={30}
           />
         </div>
-        <div className="offloading-results"></div>
+        <div className="offloading-results">
+          <ResultsTable data={results100Medium} />
+        </div>
 
-        <h2 className="results-title">Training 250 steps</h2>
-        <div className="graphs">
+        <h2 className="medium-results-title">Learning: 250 steps/episode</h2>
+        <div className="medium-graphs">
           <Graph
             title="Rollout Episode Reward Mean"
             data={rolloutEpisodeRewardMean250Steps}
@@ -115,10 +121,12 @@ const MediumKnowledgeGraph = () => {
             yAxisMax={51}
           />
         </div>
-        <div className="offloading-results"></div>
+        <div className="offloading-results">
+          <ResultsTable data={results250Medium} />
+        </div>
 
-        <h2 className="results-title">Training 500 steps</h2>
-        <div className="graphs">
+        <h2 className="medium-results-title">Learning: 500 steps/episode</h2>
+        <div className="medium-graphs">
           <Graph
             title="Rollout Episode Reward Mean"
             data={rolloutEpisodeRewardMean500Steps}
@@ -160,7 +168,9 @@ const MediumKnowledgeGraph = () => {
             yAxisMax={63}
           />
         </div>
-        <div className="offloading-results"></div>
+        <div className="offloading-results">
+          <ResultsTable data={results500Medium} />
+        </div>
       </div>
     </div>
   );

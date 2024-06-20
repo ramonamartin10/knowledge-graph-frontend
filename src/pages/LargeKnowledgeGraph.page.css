@@ -1,13 +1,37 @@
-.knowledge-graph-container {
-  height: 100vh;
+.large-knowledge-graph-container {
+  height: auto;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
+  margin-top: -40px;
 }
 
-.results-title {
-  margin: 30px;
+.large-results-title {
+  margin: 30px 0;
   font-size: 30px;
   color: #333;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.large-results {
+  margin-bottom: 20px;
+  margin-top: -40px;
+  width: 100%;
+  padding-left: 35px;
+}
+
+.large-knowledge-graph {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1700px) {
+  .large-results {
+    margin-top: -360px;
+  }
 }

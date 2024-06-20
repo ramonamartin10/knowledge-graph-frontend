@@ -1,0 +1,16 @@
+[
+    {
+      "step": 26,
+      "sourceNode": "eks_container_1",
+      "sourceNodeType": "cloud",
+      "targetNode": "azure_machine_learning_services_1",
+      "targetNodeType": "cloud"
+    },
+    {
+      "step": 95,
+      "sourceNode": "eks_cluster_1",
+      "sourceNodeType": "cloud",
+      "targetNode": "azure_file_storage_1",
+      "targetNodeType": "cloud"
+    }
+  ]
