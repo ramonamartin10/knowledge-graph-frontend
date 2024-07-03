@@ -13,9 +13,6 @@ import rolloutExplorationRate500Steps from "../assets/graphs-results/medium/roll
 import rolloutEpisodeRewardMean100Steps from "../assets/graphs-results/medium/rollout-ep-rew-mean/medium-graph-100-steps-ep_1.json";
 import rolloutEpisodeRewardMean250Steps from "../assets/graphs-results/medium/rollout-ep-rew-mean/medium-graph-250-steps-ep_1.json";
 import rolloutEpisodeRewardMean500Steps from "../assets/graphs-results/medium/rollout-ep-rew-mean/medium-graph-500-steps-ep_1.json";
-import evaluationMeanReward100Steps from "../assets/graphs-results/medium/eval-mean-reward/medium-graph-100-steps-ep_1.json";
-import evaluationMeanReward250Steps from "../assets/graphs-results/medium/eval-mean-reward/medium-graph-250-steps-ep_1.json";
-import evaluationMeanReward500Steps from "../assets/graphs-results/medium/eval-mean-reward/medium-graph-500-steps-ep_1.json";
 import ResultsTable from "../components/ResultsTable.component";
 import results500Medium from "../assets/offloading-results/medium/results-500-medium.json";
 import results250Medium from "../assets/offloading-results/medium/results-250-medium.json";
@@ -48,14 +45,6 @@ const MediumKnowledgeGraph = () => {
             yAxisName={"Exploration Rate"}
             yAxisMin={0}
             yAxisMax={1}
-          />
-          <Graph
-            title="Evaluation Mean Reward"
-            data={evaluationMeanReward100Steps}
-            xAxisName={"Step"}
-            yAxisName={"Reward"}
-            yAxisMin={-99}
-            yAxisMax={-88}
           />
           <Graph
             title="Loss"
@@ -97,14 +86,6 @@ const MediumKnowledgeGraph = () => {
             yAxisMax={1}
           />
           <Graph
-            title="Evaluation Mean Reward"
-            data={evaluationMeanReward250Steps}
-            xAxisName={"Step"}
-            yAxisName={"Reward"}
-            yAxisMin={-242}
-            yAxisMax={-226}
-          />
-          <Graph
             title="Loss"
             data={trainLoss250Steps}
             xAxisName={"Step"}
@@ -142,14 +123,6 @@ const MediumKnowledgeGraph = () => {
             yAxisName={"Exploration Rate"}
             yAxisMin={0}
             yAxisMax={1}
-          />
-          <Graph
-            title="Evaluation Mean Reward"
-            data={evaluationMeanReward500Steps}
-            xAxisName={"Step"}
-            yAxisName={"Reward"}
-            yAxisMin={-476}
-            yAxisMax={-458}
           />
           <Graph
             title="Loss"

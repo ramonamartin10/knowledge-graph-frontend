@@ -13,9 +13,6 @@ import rolloutExplorationRate500Steps from "../assets/graphs-results/small/rollo
 import rolloutEpisodeRewardMean100Steps from "../assets/graphs-results/small/rollout-ep-rew-mean/small-graph-100-steps-ep_1.json";
 import rolloutEpisodeRewardMean250Steps from "../assets/graphs-results/small/rollout-ep-rew-mean/small-graph-250-steps-ep_1.json";
 import rolloutEpisodeRewardMean500Steps from "../assets/graphs-results/small/rollout-ep-rew-mean/small-graph-500-steps-ep_1.json";
-import evaluationMeanReward100Steps from "../assets/graphs-results/small/eval-mean-reward/small-graph-100-steps-ep_1.json";
-import evaluationMeanReward250Steps from "../assets/graphs-results/small/eval-mean-reward/small-graph-250-steps-ep_1.json";
-import evaluationMeanReward500Steps from "../assets/graphs-results/small/eval-mean-reward/small-graph-500-steps-ep_1.json";
 import ResultsTable from "../components/ResultsTable.component";
 import results100Small from "../assets/offloading-results/small/results-100-small.json";
 import results250Small from "../assets/offloading-results/small/results-250-small.json";
@@ -49,14 +46,6 @@ const SmallKnowledgeGraph = () => {
             yAxisName={"Exploration Rate"}
             yAxisMin={0}
             yAxisMax={1}
-          />
-          <Graph
-            title="Evaluation Mean Reward"
-            data={evaluationMeanReward100Steps}
-            xAxisName={"Step"}
-            yAxisName={"Reward"}
-            yAxisMin={-98}
-            yAxisMax={-86}
           />
           <Graph
             title="Loss"
@@ -98,14 +87,6 @@ const SmallKnowledgeGraph = () => {
             yAxisMax={1}
           />
           <Graph
-            title="Evaluation Mean Reward"
-            data={evaluationMeanReward250Steps}
-            xAxisName={"Step"}
-            yAxisName={"Reward"}
-            yAxisMin={-239}
-            yAxisMax={-224}
-          />
-          <Graph
             title="Loss"
             data={trainLoss250Steps}
             xAxisName={"Step"}
@@ -143,14 +124,6 @@ const SmallKnowledgeGraph = () => {
             yAxisName={"Exploration Rate"}
             yAxisMin={0}
             yAxisMax={1}
-          />
-          <Graph
-            title="Evaluation Mean Reward"
-            data={evaluationMeanReward500Steps}
-            xAxisName={"Step"}
-            yAxisName={"Reward"}
-            yAxisMin={-472}
-            yAxisMax={-455}
           />
           <Graph
             title="Loss"
