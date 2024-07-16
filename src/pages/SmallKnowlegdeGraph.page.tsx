@@ -18,7 +18,6 @@ import results100Small from "../assets/offloading-results/small/results-100-smal
 import results250Small from "../assets/offloading-results/small/results-250-small.json";
 import results500Small from "../assets/offloading-results/small/results-500-small.json";
 
-
 const SmallKnowledgeGraph = () => {
   return (
     <div className="small-knowledge-graph">
